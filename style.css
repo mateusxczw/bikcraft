@@ -1,27 +1,22 @@
 body {
   background-color: #f7f7f7;
-  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   display: grid;
   justify-items: center;
-  align-items: center;
   gap: 60px;
+  margin-top: 60px;
 }
 
+p,
 h1,
 h2,
-h3,
-p {
+h3 {
   margin: 0;
 }
 
 img {
   max-width: 100%;
   display: block;
-}
-
-.logo {
-  margin-top: 40px;
 }
 
 a {
@@ -39,11 +34,11 @@ p {
 }
 
 .menu a {
-  color: #000;
+  background: #fff;
   text-transform: uppercase;
-  background-color: #fff;
-  padding: 15px 20px;
+  padding: 15px 30px;
   border-radius: 4px;
+  color: #000;
 }
 
 .principal {
@@ -54,67 +49,61 @@ p {
 
 .detalhe {
   width: 60px;
-  height: 3px;
+  height: 4px;
   background-color: #e21;
   position: absolute;
+  top: 30px;
   right: -30px;
-  top: 40px;
-}
-
-.introducao h1 {
-  place-self: end;
 }
 
 .introducao {
-  background-color: #fff;
-  display: grid;
-  align-items: center;
   position: relative;
-  text-align: right;
+  background-color: #fff;
   padding: 40px;
+  display: grid;
+  justify-items: end;
+  align-content: center;
+  text-align: right;
+  gap: 20px;
 }
 
 .btn {
   color: #fff;
   background-color: #e21;
-  padding: 15px 25px;
-  text-transform: uppercase;
-  place-self: start end;
+  padding: 15px 30px;
   border-radius: 4px;
+  text-transform: uppercase;
 }
 
 .h2-vtg {
   font-size: 64px;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.2);
-  text-align: right;
   align-self: center;
+  text-align: right;
   padding: 20px;
+  color: rgba(0, 0, 0, 0.2);
 }
 
 .vantagens {
-  display: grid;
-  gap: 20px;
   padding: 40px;
   background-color: #fff;
 }
 
 .item {
   display: grid;
-  gap: 20px;
   grid-template-columns: auto 1fr;
-  align-items: center;
+  gap: 20px;
+  padding: 20px;
 }
 
 .item p {
-  align-self: start;
   grid-column: 2;
 }
 
 .footer {
   width: 100%;
-  background-color: #fff;
   padding: 40px;
   text-align: center;
+  background-color: #fff;
   box-sizing: border-box;
 }
