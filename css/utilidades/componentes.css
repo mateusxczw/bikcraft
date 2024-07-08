@@ -47,7 +47,7 @@
 }
 
 .botao.secundario:hover {
-  background: var(--color);
+  background: var(--color-8);
 }
 
 @media (width <= 600px) {
