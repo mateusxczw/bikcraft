@@ -1,6 +1,5 @@
 .container {
   box-sizing: border-box;
-  margin: 0 auto;
   max-width: 1200px;
   padding-left: 20px;
   padding-right: 20px;
@@ -17,6 +16,7 @@
   text-transform: uppercase;
   color: var(--color-p5);
   font: 600 1.125rem/1.35 "Poppins", san-serif;
+  max-width: max-content;
 }
 
 .link {
@@ -39,6 +39,15 @@
 
 .botao:hover {
   background: linear-gradient(#ffb60d, #e59317);
+}
+
+.botao.secundario {
+  background: var(--color-10);
+  color: var(--color-2);
+}
+
+.botao.secundario:hover {
+  background: var(--color);
 }
 
 @media (width <= 600px) {
