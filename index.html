@@ -8,8 +8,8 @@
       name="description"
       content="Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft."
     />
+    <link rel="preload" href="css/style.css" as="style" />
     <link rel="stylesheet" href="css/style.css" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,7 +22,7 @@
     <header class="header-bg">
       <div class="header container">
         <a href="./index.html"
-          ><img src="/img/bikcraft.svg" alt="Bikcraft"
+          ><img src="/img/bikcraft.svg" width="136" height="32" alt="Bikcraft"
         /></a>
 
         <nav aria-label="primária">
@@ -47,9 +47,15 @@
           </p>
           <a href="./bicicletas.html" class="botao">Escolha a sua</a>
         </div>
-        <div class="introducao-imagem">
-          <img src="img/fotos/introducao.jpg" alt="Bicicletas Elétrica preta" />
-        </div>
+        <picture class="introducao-imagem">
+          <source media="(width <= 800px)" srcset="img/bicicletas/nimbus.jpg" />
+          <img
+            src="img/fotos/introducao.jpg"
+            width="1280"
+            height="1600"
+            alt="Bicicletas Elétrica preta"
+          />
+        </picture>
       </div>
     </main>
 
@@ -104,7 +110,12 @@
 
           <div class="tecnologia-vantagens">
             <div>
-              <img src="img/icones/eletrica.svg" alt="" />
+              <img
+                src="img/icones/eletrica.svg"
+                width="24"
+                height="24"
+                alt=""
+              />
               <h3 class="font-1-m color-0">Motor Elétrico</h3>
               <p class="font-2-s color-5">
                 Toda Bikcraft é equipada com um motor elétrico que possui
@@ -114,7 +125,12 @@
             </div>
 
             <div>
-              <img src="img/icones/rastreador.svg" alt="" />
+              <img
+                src="img/icones/rastreador.svg"
+                width="24"
+                height="24"
+                alt=""
+              />
               <h3 class="font-1-m color-0">Rastreador</h3>
               <p class="font-2-s color-5">
                 Sabemos o quão preciosa é a sua Bikcraft, por isso adicionamos
@@ -124,7 +140,12 @@
           </div>
         </div>
         <div class="tecnologia-imagem">
-          <img src="img/fotos/tecnologia.jpg" alt="" />
+          <img
+            src="img/fotos/tecnologia.jpg"
+            width="1200"
+            height="1920"
+            alt=""
+          />
         </div>
       </div>
     </article>
@@ -134,14 +155,70 @@
         nossos parceiros<span class="color-p1">.</span>
       </h2>
       <ul>
-        <li><img src="img/parceiros/caravan.svg" alt="Caravan" /></li>
-        <li><img src="img/parceiros/ranek.svg" alt="Ranek" /></li>
-        <li><img src="img/parceiros/handel.svg" alt="handel" /></li>
-        <li><img src="img/parceiros/dogs.svg" alt="dogs" /></li>
-        <li><img src="img/parceiros/lescone.svg" alt="lescone" /></li>
-        <li><img src="img/parceiros/flexblog.svg" alt="flexblog" /></li>
-        <li><img src="img/parceiros/wildbeast.svg" alt="wildbeast" /></li>
-        <li><img src="img/parceiros/surfbot.svg" alt="surfbot" /></li>
+        <li>
+          <img
+            src="img/parceiros/caravan.svg"
+            width="140"
+            height="38"
+            alt="Caravan"
+          />
+        </li>
+        <li>
+          <img
+            src="img/parceiros/ranek.svg"
+            width="140"
+            height="38"
+            alt="Ranek"
+          />
+        </li>
+        <li>
+          <img
+            src="img/parceiros/handel.svg"
+            width="140"
+            height="38"
+            alt="handel"
+          />
+        </li>
+        <li>
+          <img
+            src="img/parceiros/dogs.svg"
+            width="140"
+            height="38"
+            alt="dogs"
+          />
+        </li>
+        <li>
+          <img
+            src="img/parceiros/lescone.svg"
+            width="140"
+            height="38"
+            alt="lescone"
+          />
+        </li>
+        <li>
+          <img
+            src="img/parceiros/flexblog.svg"
+            width="140"
+            height="38"
+            alt="flexblog"
+          />
+        </li>
+        <li>
+          <img
+            src="img/parceiros/wildbeast.svg"
+            width="140"
+            height="38"
+            alt="wildbeast"
+          />
+        </li>
+        <li>
+          <img
+            src="img/parceiros/surfbot.svg"
+            width="140"
+            height="38"
+            alt="surfbot"
+          />
+        </li>
       </ul>
     </section>
 
